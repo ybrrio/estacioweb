@@ -7,21 +7,14 @@
 </head>
 <body>
     <script>
+        window.alert ('Bem vindo a Autoescola Estácio! Click em ok para Iniciar sua avaliação.')
         var idade = prompt ("Informe sua idade");
-        var sexo = prompt ("Informe seu sexo: M/F");
 
-        if (idade>=18 && sexo=='M') {
-            window.alert ('ola ' + 'voce tem ' + idade + ' anos. Pessoas do sexo ' +sexo+ ' maiores de idade tem entrada autorizada com pagamento de taxa.');
+        if (idade>=18) {
+            window.alert ('oba, você pode dirigir!');
         } else {
-          window.alert ('você não tem idade para entrar');
+          window.alert ('Ops, você ainda não tem a idade mínima para dirigir!');
         }
-        if (idade>=18 && sexo=='F') {
-            window.alert ('ola ' + 'voce tem ' + idade + ' anos. Pessoas do sexo ' +sexo+ ' maiores de idade tem entrada autorizada com taxa grátis');
-        } else {
-            window.alert ('você não tem idade para entrar');
-        }
-
-        
     </script>  
 </body>
 </html>

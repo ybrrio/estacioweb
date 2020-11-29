@@ -3,5 +3,5 @@
          $idade = $_POST ["idade"];
 
 
-         echo "Nome: " ".$nome" idade: ".$idade";
+         echo "Nome: " ".$nome" "idade: ".$idade";
   ?>

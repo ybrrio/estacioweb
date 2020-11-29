@@ -1,0 +1,32 @@
+  
+<!--questao 5
+A biblioteca de uma universidade deseja fazer um algoritmo que leia o nome
+do livro que será emprestado, o tipo de usuário (professor ou aluno) e
+possa imprimir um recibo conforme mostrado a seguir. Considerar que o
+professor tem 10 dias para devolver o livro o aluno somente 3 dias.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+    <style>
+        body{
+            background-color: palegoldenrod;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="questao05.php">
+        <p>Nome do livro:</p><input type="text" name="livro">
+        <p><input type="radio" name="user" value="professor">Professor</p>
+        <p><input type="radio" name="user" value="aluno">Aluno</p>
+        <input type="submit" value="imprimir recibo">
+    </form>
+</body>
+</html>
