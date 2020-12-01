@@ -1,0 +1,13 @@
+criacao do banco de dados:
+
+create database if not exists cadastro_pessoas
+default character set utf8
+default collate utf8_general_ci
+
+create table if not exists users(
+codigo int not null auto_increment,
+nome varchar(50) not null,
+email varchar(50) not null unique,
+tel varchar(15) not null,
+primary key(codigo)
+) default charset=utf8

@@ -2,17 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/cadastro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>$("input").prop('required',true);</script>
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="inclusao.php" method="POST">
-        <h3>Cadastre-se: </h3>
-        <input type="text" name="nome" placeholder="nome">
-        <input type="email" name="email" placeholder="email"/>
-        <input type="tel" name="tel" placeholder="telefone">
-        <input type="submit" value="cadastrar">
-        <input type="submit" value="limpar tela" name="clear">
-    </form>
+    <div class="alinhar">
+        <form action="inclusao.php" method="POST">
+            <h3>Cadastre-se: </h3>
+            <div class="ajustes">
+                <label>Nome <span style="color: red;">*</span></label>
+                <input type="text" class="inputs" name="nome" required>
+            </div>
+            <div class="ajustes">
+                <label>Email <span style="color: red;">*</span></label>
+                <input type="email" class="inputs" name="email" required>
+            </div>
+            <div class="ajustes">
+                <label>telefone <span style="color: red;">*</span></label>
+                <input type="tel" class="inputs" name="tel" required>
+            </div>
+            <div style="padding-left: 26%;">
+                <input type="submit" class="btn btn-primary" value="cadastrar">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
